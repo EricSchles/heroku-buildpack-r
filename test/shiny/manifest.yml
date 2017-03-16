@@ -1,0 +1,9 @@
+---
+# all applications use these settings and services
+memory: 512M
+instances: 1
+applications:
+- name: r-example-app
+  path: .
+  timeout: 180
+  command: R --no-save < run.R
