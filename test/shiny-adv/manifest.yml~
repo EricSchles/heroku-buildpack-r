@@ -7,8 +7,4 @@ applications:
   path: .
   timeout: 180
   buildpack: https://github.com/EricSchles/heroku-buildpack-r.git#cedar-14-chroot
-  command: R --no-save < run_server.R
-# clue comes from: https://docs.cloudfoundry.org/adminguide/supporting-websockets.html
-properties:
-  logger_endpoint:
-    port: 443
+  command: R --no-save < run.R
